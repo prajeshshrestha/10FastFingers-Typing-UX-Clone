@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #add5ff;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-container
+{
+    width:65%;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.wordList
+{
+    width: 100%;
+    font-weight: 400;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 4px;
+    height: 150px;
+    background: white;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wordList > span
+{
+    margin-top: 2px;
+    padding: 3px 5px 3px 5px; 
+}
+.inputField
+{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #84bdfac9;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+input[type="text"]
+{
+    width: 60%;
+    padding-left: 7px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    
+}
+
+#wordInput:focus
+{
+    outline: none;
+}
+
+#countDown
+{
+    display: inline-block;
+    background: rgb(8, 92, 202);
+    font-size: 22px;
+    font-weight: 400;
+    padding: 3px;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 4px;
+    margin-left: -250px;
+}
+
+.correct
+{
+    color: green;
+}
+.notcorrect
+{
+    color: red;
+}
+.highlight
+{
+    background-color: rgba(56, 56, 56, 0.25);
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 3px;
+}
+.highlightIncorrect
+{
+    background: rgb(248, 49, 49);
+    color: white;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 3px;
+}
+#scoreField
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.score
+{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(96, 153, 4);
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #add5ff3f;
+}
+
+#resetBtn
+{  
+    font-size: 20px;
+    margin-top: 25px;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(0, 202, 252);
+    outline:none;
+    border: 1px solid #86a9ce;
+    border-radius: 4px;
+}
+.offDisplay
+{
+    display: none;
+}
+
