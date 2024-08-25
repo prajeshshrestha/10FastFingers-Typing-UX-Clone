@@ -103,9 +103,10 @@ function sleep(ms)
 async function prank()
 {
     document.querySelector('.score').innerText = `${Math.round((correctWordList/60)*60)-20} WPM`
-    await sleep(3000);
+    // adjust the waiting time to 1.5 seconds
+    await sleep(1500);
     document.querySelector('.score').innerText = `Just Kiddin'`
-    await sleep(2000);
+    await sleep(500);
     document.querySelector('.score').innerText = `${Math.round((correctWordList/60)*60)} WPM`
 }
 resetBtn.addEventListener("click", ()=>{
